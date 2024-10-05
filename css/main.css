@@ -37,6 +37,16 @@ body {
     -moz-osx-font-smoothing: grayscale
 }
 
+.mt-5 {
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .mt-5 {
+        margin-top: 0;
+    }
+}
+
 button,input,textarea {
     font-family: Mikado,sans-serif;
     font-size: inherit;
