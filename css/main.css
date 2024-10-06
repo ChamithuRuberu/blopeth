@@ -43,13 +43,13 @@ body {
 
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 1100px) {
     .mt-5 {
-        margin-top: 0;
+        margin-top: -10;
     }
 }
 
-@media screen and (min-width: 1420px) {
+@media screen and (min-width: 1620px) {
     .mt-5 {
         margin-top: 5.5rem;
     }
@@ -1549,9 +1549,19 @@ h2 {
     position: relative;
     z-index: 5;
     display: flex;
-    align-items: flex-start
+    align-items: flex-start;
+    padding-top: 50px;
 }
+@media screen and (min-width: 1420px) {
 
+.about__container {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+}
 .animal {
     transform: none;
 }
@@ -2474,273 +2484,6 @@ h2 {
     z-index: 100;
 }
 
-.what {
-    position: relative;
-    padding-top: 3.25rem;
-    padding-bottom: 1.3125rem
-}
-
-.what__bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none
-}
-
-.what__bg img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    -o-object-fit: cover;
-    object-fit: cover;
-    z-index: 1
-}
-
-.what__container {
-    position: relative;
-    z-index: 2
-}
-
-.top-what {
-    display: grid;
-    grid-template-columns: repeat(2,1fr)
-}
-
-.top-what__card {
-    max-width: 39.875rem
-}
-
-.top-what__img {
-    width: 76%;
-    position: relative;
-    aspect-ratio: 610/516;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -2.625rem;
-    -webkit-animation: what-img1 3s ease-in-out infinite alternate forwards;
-    animation: what-img1 3s ease-in-out infinite alternate forwards
-}
-
-.card-what {
-    padding: 1.25rem 1.25rem 1.875rem 1.25rem;
-    border-radius: 1.125rem;
-    border: .25rem solid #000;
-    background: linear-gradient(148deg,#fff5e3 19.02%,#999388 267.03%);
-    box-shadow: 0 .25rem 0 0 #000;
-    display: grid;
-    gap: 1.4375rem
-}
-
-.card-what__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-.card-what__title {
-    margin-top: 3%
-}
-
-.card-what__title img {
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.card-what__num {
-    border-radius: 1.125rem;
-    border: .25rem solid #000;
-    background: linear-gradient(180deg,#42c7fb 0,#4261fb 178.92%);
-    box-shadow: 0 .25rem 0 0 #000;
-    padding: .375rem;
-    position: relative;
-    font-size: 2rem
-}
-
-.card-what__num p {
-    border-radius: 1rem;
-    border: .25rem solid #000;
-    background: linear-gradient(180deg,#fff 0,#fffcab 210.32%),#fdfaf2;
-    box-shadow: .125rem -7.75rem 0 0 rgba(253,160,48,.11) inset;
-    padding: 1rem 1.25rem;
-    text-align: center;
-    color: #000;
-    font-weight: 700;
-    line-height: normal
-}
-
-.card-what__bottom {
-    position: relative;
-    color: #000;
-    font-weight: 700;
-    line-height: normal;
-    font-size: 2rem;
-    border-radius: 62.5rem;
-    border: .25rem solid #000;
-    background: linear-gradient(180deg,#ffe065 17.72%,#ff9735 138.6%);
-    box-shadow: 0 .25rem 0 0 #000;
-    padding: .375rem;
-    overflow: hidden
-}
-
-.card-what__bottom:not(:last-child) {
-    margin-bottom: .5rem
-}
-
-.card-what__wrp-bottom {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: .75rem;
-    border-radius: 1000px;
-    border: .25rem solid #000;
-    background: linear-gradient(180deg,#fff 0,#fffcab 140.1%);
-    box-shadow: 0 0 .25rem 0 rgba(0,0,0,.25) inset;
-    overflow: hidden;
-    padding-right: .5625rem;
-    display: flex;
-    gap: 1rem
-}
-
-.card-what__wrp-bottom span {
-    position: relative;
-    width: 100%;
-    height: 3.25rem;
-    overflow: hidden;
-    border-radius: 2.25rem;
-    border: .25rem solid #000;
-    background-color: #ffffea;
-    box-shadow: .125rem -7.75rem 0 0 rgba(253,160,48,.11) inset
-}
-
-.card-what__wrp-bottom span::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(176deg,#27ff1c 44.16%,#5aa801 110.07%),#fdfaf2;
-    transition: width .6s ease .4s;
-    will-change: width
-}
-
-._watcher-view .card-what__wrp-bottom span::after {
-    width: 30%
-}
-
-.card-what--bulb .card-what__wrp-bottom span::after {
-    width: 0
-}
-
-.card-what--bulb._watcher-view .card-what__wrp-bottom span::after {
-    width: 100%
-}
-
-.card-what__ball {
-    position: relative;
-    width: 3.1538461538em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1;
-    z-index: 5;
-    font-size: 1.625rem
-}
-
-.card-what__ball::before {
-    content: "";
-    position: absolute;
-    width: calc(100% + .5rem);
-    height: calc(100% + .5rem);
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    background: url(../img/buy/num-dec.png) center/cover no-repeat;
-    z-index: -1
-}
-
-.card-what--bulb .card-what__ball::before {
-    background: url(../img/what/num-dec.png) center/cover no-repeat
-}
-
-.middle-what {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-    z-index: 2
-}
-
-.middle-what__img {
-    max-width: 51rem;
-    aspect-ratio: 816/636;
-    -webkit-animation: what-img2 3s ease-in-out infinite alternate forwards;
-    animation: what-img2 3s ease-in-out infinite alternate forwards
-}
-
-.bottom-what {
-    border-radius: 1.625rem;
-    border: .25rem solid #000;
-    background: linear-gradient(148deg,#fff5e3 19.02%,#999388 267.03%);
-    box-shadow: 0 .25rem 0 0 #000;
-    padding: 1.25rem;
-    position: relative;
-    z-index: 6
-}
-
-.bottom-what__body {
-    display: flex;
-    width: 100%;
-    gap: 1.4375rem
-}
-
-.bottom-what__text {
-    max-width: 44.125rem;
-    border-radius: 1.5rem;
-    border: .25rem solid #000;
-    background: linear-gradient(140deg,#fed52e 22.77%,#987f1c 180.99%);
-    padding: .375rem
-}
-
-.bottom-what__wrp-text {
-    border-radius: 1.125rem;
-    border: .25rem solid #000;
-    background: #eee5d4;
-    padding: 1.5rem;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.bottom-what__title {
-    position: relative;
-    width: 90%;
-    aspect-ratio: 698/204
-}
-
-.bottom-what__title img {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.bottom-what__buttons {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1rem
-}
 
 @media (min-width: 29.99875em) {
     .social-block--rotate {
