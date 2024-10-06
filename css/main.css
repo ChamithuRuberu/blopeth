@@ -3282,13 +3282,6 @@ h2 {
         row-gap: 1.875rem
     }
 
-    .card-tokenomiks__item {
-        font-size: 1.125rem
-    }
-
-    .card-tokenomiks__item::before {
-        padding-top: .375rem
-    }
 
     .card-tokenomiks__item::before {
         padding-bottom: .375rem
