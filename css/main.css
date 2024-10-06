@@ -329,7 +329,8 @@ h1,h2,h3,h4,h5,h6 {
     text-overflow: ellipsis;
     word-break: break-all;
     transition: color .2s;
-    will-change: color
+    will-change: color;
+    flex-grow: 1;
 }
 
 .cn__button {
@@ -339,7 +340,8 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     aspect-ratio: 1;
     z-index: 5;
-    width: 3.8125rem
+    width: 3.8125rem;
+    margin-left: auto;
 }
 
 .cn__button::before {
