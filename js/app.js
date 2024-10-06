@@ -381,23 +381,23 @@ document.addEventListener('scroll', () => {
     }
 });
 
-function adjustFooterPosition() {
-    const footerLeft = document.querySelector('.footer__left');
-    const windowWidth = window.innerWidth;
-    const elementWidth = footerLeft.offsetWidth;
+// function adjustFooterPosition() {
+//     const footerLeft = document.querySelector('.footer__left');
+//     const windowWidth = window.innerWidth;
+//     const elementWidth = footerLeft.offsetWidth;
     
-    if (windowWidth > 992) {
-        // Calculate and apply the margin-left to center the element
-        const marginLeft = (windowWidth - elementWidth) / 2;
-        footerLeft.style.marginLeft = `${marginLeft}px`;
-    } else {
-        // Remove margin when width is less than or equal to 992px
-        footerLeft.style.marginLeft = '';
-    }
-}
+//     if (windowWidth > 992) {
+//         // Calculate and apply the margin-left to center the element
+//         const marginLeft = (windowWidth - elementWidth) / 2;
+//         footerLeft.style.marginLeft = `${marginLeft}px`;
+//     } else {
+//         // Remove margin when width is less than or equal to 992px
+//         footerLeft.style.marginLeft = '';
+//     }
+// }
 
 // Adjust the footer when the page loads
-window.addEventListener('load', adjustFooterPosition);
+// window.addEventListener('load', adjustFooterPosition);
 
 // Adjust the footer when the window is resized
-window.addEventListener('resize', adjustFooterPosition);
+// window.addEventListener('resize', adjustFooterPosition);
