@@ -3695,6 +3695,11 @@ h2 {
         background: linear-gradient(180deg,#fdf9d4 21.78%,#fbdca3 100%);
     }
 
+    .pink {
+        background: linear-gradient(180deg,#ed3ede -22.89%,#e1d3dcec 164.47%);
+    }
+    }
+
     .footer .menu__link {
         padding-left: clamp(.375rem ,-1.3339484242rem + 2.7564239993vw ,1.5rem)
     }
