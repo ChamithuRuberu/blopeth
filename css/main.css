@@ -2452,7 +2452,8 @@ h2 {
     border: .25rem solid #000;
     background: linear-gradient(180deg,#ffe065 17.72%,#ff9735 138.6%);
     box-shadow: 0 .25rem 0 0 #000;
-    padding: .375rem
+    padding: .375rem;
+    z-index: 100;
 }
 
 .what {
@@ -3690,7 +3691,7 @@ h2 {
 
     .footer__top .footer__container {
         flex-direction: column;
-        row-gap: .625rem
+        row-gap: .125rem
     }
 
     .footer__left {
