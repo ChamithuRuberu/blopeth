@@ -2757,8 +2757,8 @@ h2 {
     .menu__list {
         align-items:center;
         border-radius: 1rem;
-        border: .25rem solid #000;
-        background: linear-gradient(180deg,#fdf9d4 21.78%,#fbdca3 100%)
+        /* border: .25rem solid #000;
+        background: linear-gradient(180deg,#fdf9d4 21.78%,#fbdca3 100%) */
     }
 
     .footer__left {
@@ -3945,7 +3945,11 @@ h2 {
     }
 
     .menu__link {
-        font-size: clamp(1.25rem ,.8702336835rem + .6125386665vw ,1.5rem)
+        font-size: clamp(1.25rem ,.8702336835rem + .6125386665vw ,1.5rem);
+        border-radius: 1rem;
+        border: 0.25rem solid black;
+        padding: 1.1rem;
+        background: linear-gradient(180deg,#fdf9d4 21.78%,#fbdca3 100%);
     }
 
     .footer .menu__link {
