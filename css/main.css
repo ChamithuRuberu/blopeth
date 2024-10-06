@@ -41,9 +41,17 @@ body {
     margin-top: 5rem;
 }
 
+
+
 @media screen and (max-width: 1100px) {
     .mt-5 {
         margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .mt-5 {
+        margin-top: 5.5rem;
     }
 }
 
@@ -1542,6 +1550,16 @@ h2 {
     z-index: 5;
     display: flex;
     align-items: flex-start
+}
+
+.animal {
+    transform: none;
+}
+
+@media screen and (min-width: 1030px) {
+    .animal {
+        transform: translateY(3.75rem);
+    }
 }
 
 .about__bg {
