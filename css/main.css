@@ -1145,7 +1145,7 @@ h2 {
 }
 
 .title-block._watcher-view .title-block__img-title img {
-    -webkit-animation: titlh2 .4s ease .2s forwards;
+    -webkit-animation: titlh2 .4s ease .3s forwards;
     animation: titlh2 .4s ease .2s forwards
 }
 
