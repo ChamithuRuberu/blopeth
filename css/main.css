@@ -1524,7 +1524,7 @@ h2 {
     opacity: 0;
     visibility: hidden;
     -webkit-transform: translateX(-100%);
-    transform: translateX(-100%)
+    transform: translateX(-100%);
 }
 
 .loaded .hero__social {
@@ -1589,6 +1589,22 @@ h2 {
     bottom: -33%;
     right: 0;
     z-index: 2
+}
+
+.about__bg img:nth-child(5) {
+    width: 33%;
+    bottom: -10%;
+    left: 0;
+    z-index: 2
+}
+
+@media screen and (min-width: 992px) {
+    .about__bg img:nth-child(5) {
+        width: 33%;
+        bottom: -33%;
+        left: 0;
+        z-index: 2
+    }
 }
 
 .about__img {
@@ -4232,7 +4248,9 @@ h2 {
     }
 
     .footer__left {
-        margin-top: clamp(-3.125rem ,.7547170587rem + -3.7735849811vw ,.0000000625rem)
+        /* margin-top: clamp(-3.125rem ,.7547170587rem + -3.7735849811vw ,.0000000625rem); */
+        margin-top: 2rem;
+        justify-content: center;
     }
 
     .footer__bottom {
