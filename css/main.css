@@ -1101,7 +1101,8 @@ h2 {
 
 .social-block {
     display: flex;
-    gap: 1.375rem
+    gap: 1.575rem;
+    justify-content: center;
 }
 
 .footer .social-block {
