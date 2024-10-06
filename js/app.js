@@ -346,3 +346,37 @@
     }()
 }
 )();
+
+document.addEventListener('scroll', () => {
+    const menuItems = document.querySelectorAll('.menu__item');
+    const footer = document.querySelector('.footer');
+    const specificLink = document.querySelector('a[data-goto=".footer"]');
+    const aboutLink = document.querySelector('a[data-goto=".about__container"]');
+
+    // Check scroll positions
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const footerPosition = footer.offsetTop;
+
+    // If the user has scrolled to the very top of the page
+    if (window.scrollY === 0) {
+        menuItems.forEach(item => {
+            const link = item.querySelector('.menu__link');
+            link.classList.remove('_navigator-active');
+        });
+    }
+    // If the user has scrolled to the bottom of the page
+    else if (scrollPosition >= footerPosition) {
+        menuItems.forEach(item => {
+            const link = item.querySelector('.menu__link');
+            link.classList.remove('_navigator-active');
+        });
+
+        // Add the class to the specific link (e.g., .footer link)
+        specificLink.classList.add('_navigator-active');
+    } 
+    // If the user is scrolling in between
+    else {
+        specificLink.classList.remove('_navigator-active');
+        aboutLink.classList.add('_navigator-active');
+    }
+});
