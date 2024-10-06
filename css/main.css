@@ -43,13 +43,13 @@ body {
 
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 1100px) {
     .mt-5 {
-        margin-top: 0;
+        margin-top: -10;
     }
 }
 
-@media screen and (min-width: 1420px) {
+@media screen and (min-width: 1620px) {
     .mt-5 {
         margin-top: 5.5rem;
     }
@@ -1549,9 +1549,19 @@ h2 {
     position: relative;
     z-index: 5;
     display: flex;
-    align-items: flex-start
+    align-items: flex-start;
+    padding-top: 50px;
 }
+@media screen and (min-width: 1420px) {
 
+.about__container {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+}
 .animal {
     transform: none;
 }
